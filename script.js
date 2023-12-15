@@ -108,11 +108,11 @@ function loadQuiz() {
   d_text.innerText = currentQuizData.d;
 }
 
-function deselectAnswers() {
+const deselectAnswers = () => {
   answerEls.forEach((answerEl) => (answerEl.checked = false));
-}
+};
 
-function getSelected() {
+const getSelected = () => {
   let answer;
 
   answerEls.forEach((answerEl) => {
@@ -122,7 +122,7 @@ function getSelected() {
   });
 
   return answer;
-}
+};
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
