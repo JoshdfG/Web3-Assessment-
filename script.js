@@ -68,8 +68,16 @@ const quizData = [
       " Which version control system is commonly used for source code management?",
     a: "SVN (Subversion)",
     b: "Git",
-    c: ". Mercurial",
+    c: "Mercurial",
     d: "CVS (Concurrent Versions System)",
     correct: "b",
+  },
+  {
+    question: "What is the purpose of CSS (Cascading Style Sheets)?",
+    a: " To create dynamic web pages",
+    b: "To define the structure of a web page",
+    c: "To enhance the functionality of a website",
+    d: "To style the visual presentation of a web page",
+    correct: "d",
   },
 ];
