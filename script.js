@@ -94,9 +94,7 @@ const submitBtn = document.getElementById("submit");
 let currentQuiz = 0;
 let score = 0;
 
-loadQuiz();
-
-function loadQuiz() {
+const loadQuiz = () => {
   deselectAnswers();
 
   const currentQuizData = quizData[currentQuiz];
@@ -106,7 +104,7 @@ function loadQuiz() {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
-}
+};
 
 const deselectAnswers = () => {
   answerEls.forEach((answerEl) => (answerEl.checked = false));
@@ -145,3 +143,5 @@ submitBtn.addEventListener("click", () => {
     }
   }
 });
+
+loadQuiz();
